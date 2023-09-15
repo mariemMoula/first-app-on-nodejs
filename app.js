@@ -1,2 +1,11 @@
 const logger = require('./logger'); 
-logger.log("hi");
+logger.log("HI");
+console.log("================================");
+console.log(__filename);
+console.log(__dirname);
+const os = require('os');
+var totalMemo = os.totalmem(); 
+var freeMemo = os.freemem();
+console.log("================================");
+console.log(totalMemo);
+console.log(freeMemo) ;
